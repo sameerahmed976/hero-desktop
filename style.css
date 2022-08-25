@@ -65,13 +65,17 @@ img {
   width: 100%;
 }
 
+.header {
+  box-shadow: 2px 4px 6px #000;
+  background-color: rgba(245, 245, 245, 0.196);
+}
+
 .navbar {
   display: flex;
   align-items: center;
-  min-height: 4rem;
+  min-height: 5rem;
   justify-content: space-between;
   margin: 0 4rem;
-  background-color: #000;
 }
 
 /* mobile */
@@ -88,17 +92,107 @@ img {
 
 .nav-links li a {
   display: block;
-  font-size: var(--font-size-s-h4);
+  font-size: var(--font-size-s-h5);
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 576px) {
-}
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 992px) {
-}
-@media only screen and (min-width: 1200px) {
+.nav-links li a:hover {
+  color: #00ed65;
 }
 
-@media only screen and (min-width: 1400px) {
+.btn {
+  border: none;
+  display: flex;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: #00ed65;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition-8);
+  box-shadow: 1px 2px 4px #000;
+}
+
+.right-arrow {
+  width: 30px;
+  padding-left: 0.7rem;
+}
+
+.btn:hover {
+  background-color: rgb(134, 134, 134);
+  color: rgb(255, 255, 255);
+}
+
+.hero-section {
+  display: grid;
+  width: 95vw;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  row-gap: 2rem;
+  min-height: calc(100vh - 5rem);
+}
+
+.content {
+  justify-self: center;
+  align-self: start;
+}
+
+.tag-line {
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #00ed65;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content-heading {
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content-paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-buy {
+  text-align: center;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  position: relative;
+  padding: 1rem 2rem;
+  width: 35%;
+  transition: var(--transition-8);
+  box-shadow: 1px 2px 1px #000;
+  margin-left: 2rem;
+}
+
+.btn-buy:hover {
+  transform: translateY(15%);
+  background-color: white;
+  color: black;
+  box-shadow: 2px 4px 6px #000;
+}
+
+.btn-buy::after {
+  content: url("./images/arrow-right-color.svg");
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  justify-self: center;
+  align-self: start;
+  margin-top: 5rem;
 }
